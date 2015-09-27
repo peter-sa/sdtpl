@@ -1,0 +1,9 @@
+dist/
+*cabal*sandbox*
+*.dyn*
+*.hi
+*.o
+*.tix
+*~
+\#*\#
+.\#*
