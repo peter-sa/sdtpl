@@ -1,1 +1,2 @@
-(import ./release.nix).sdtpl.env
+{ args ? {} }:
+(import ./default.nix { inherit args; }).env

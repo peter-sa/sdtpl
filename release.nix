@@ -1,4 +1,5 @@
+{ args ? {} }:
+
 let
-  pkgs = import <nixpkgs> {};
-in
-  { sdtpl = pkgs.haskellPackages.callPackage ./default.nix {}; }
+  pkg = import ./. { args = { release = true; } // args; };
+in builtins.listToAttrs [ { name = pkg.pname; value = pkg; } ]
