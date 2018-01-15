@@ -1,4 +1,5 @@
-dist/
+/dist-newstyle
+/dist/
 *cabal*sandbox*
 *.dyn*
 *.hi
